@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Confirmation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>🎉 Booking Confirmed!</h2>
+        <p><strong>Passenger Name:</strong> <span id="passengerName"></span></p>
+        <p><strong>Train:</strong> <span id="trainName"></span></p>
+        <p><strong>PNR Number:</strong> <span id="pnrNumber"></span></p>
+    </div>
+
+    <script>
+        document.getElementById("passengerName").innerText = localStorage.getItem("passengerName");
+        document.getElementById("trainName").innerText = localStorage.getItem("trainName");
+        document.getElementById("pnrNumber").innerText = localStorage.getItem("pnrNumber");
+    </script>
+</body>
+</html>

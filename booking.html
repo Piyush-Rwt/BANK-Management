@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book a Ticket</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Train Ticket Booking</h2>
+        
+        <label for="name">Passenger Name:</label>
+        <input type="text" id="name" placeholder="Enter your name" required>
+
+        <label for="train">Select a Train:</label>
+        <select id="train">
+            <option value="Express 101">Express 101</option>
+            <option value="Superfast 202">Superfast 202</option>
+        </select>
+
+        <button onclick="bookTicket()">Book Ticket</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
